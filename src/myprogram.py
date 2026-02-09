@@ -3,6 +3,7 @@ import os
 import string
 import random
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+from datasets import load_dataset
 
 
 class MyModel:
@@ -14,6 +15,7 @@ class MyModel:
     def load_training_data(cls):
         # your code here
         # this particular model doesn't train
+        ds = load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1")
         return []
 
     @classmethod
