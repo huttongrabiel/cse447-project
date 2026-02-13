@@ -3,3 +3,9 @@ datasets
 numpy
 
 datasets
+
+pytorch
+
+torchvision
+
+nltk
